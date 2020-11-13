@@ -13,13 +13,15 @@
     <main class='page-main'>
       <section class="about">
         <img src="img/photo.jpg" alt="Юля Седина" class="about__photo">
-        <h1 class="about__title">Привет!<br/>
-          Меня зовут Юля Седина</h1>
-        <p class="about__text">Я — начинающая фронтенд-разработчица. Умею верстать статичные и динамичные сайты так, чтобы было красиво, а все, что не умею, скорее всего, изучаю прямо сейчас.
-        </p>
-        <p class="about__text">Меня можно найти на&nbsp;<a href="https://github.com/thatbookshopguy">Гитхабе</a>, в&nbsp;<a href="https://t.me/thatbookshopguy">Телеграме</a>, а еще можно написать на почту —
-          <a href="mailto:yulia.sedina@icloud.com">yulia.sedina@icloud.com</a>
-        </p>
+        <div class="about__wrapper">
+          <h1 class="about__title">Привет!<br/>
+            Меня зовут Юля Седина</h1>
+          <p class="about__text">Я — начинающая фронтенд-разработчица. Умею верстать статичные и динамичные сайты так, чтобы было красиво, а все, что не умею, скорее всего, изучаю прямо сейчас.
+          </p>
+          <p class="about__text">Меня можно найти на&nbsp;<a href="https://github.com/thatbookshopguy">Гитхабе</a>, в&nbsp;<a href="https://t.me/thatbookshopguy">Телеграме</a>, а еще можно написать на почту —
+            <a href="mailto:yulia.sedina@icloud.com">yulia.sedina@icloud.com</a>
+          </p>
+        </div>
       </section>
       <section class="skills">
         <h2 class="skills__title title">Я знаю, как:</h2>
@@ -44,7 +46,7 @@
         </ul>
       </section>
       <section class="works">
-        <h2 class="works__title title">Мои работы</h2>
+        <h2 class="works__title title">Мои работы:</h2>
         <div class="swiper-container">
           <ul class="works__list swiper-wrapper">
             <li class="works__item swiper-slide">
@@ -70,12 +72,13 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript">
+    if (window.innerWidth < 768) {
       var mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
         direction: 'horizontal',
         loop: true,
         spaceBetween: 50,
       });
+    }
     </script>
   </body>
 </html>
