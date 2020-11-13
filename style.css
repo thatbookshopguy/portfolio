@@ -88,6 +88,13 @@ a:hover {
   max-width: 463px;
 }
 
+@media (max-width: 375px) {
+  .works__img {
+    width: 80vw;
+    min-width: 70%;
+  }
+}
+
 .works__description {
   margin: 15px auto 15px;
   width: calc(100% - 50px);
